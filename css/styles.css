@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/bg-mobile.svg");
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.text {
+    font-weight: 400;
+    margin-bottom: 2em;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+}
+
+header, main, footer {
+    max-width: 1300px;
+    width: 85%;
+    margin: auto;
+}
+
+picture {
+    width: 100%;
+}
+
+picture .main-img {
+    width: 100%;
+}
+
+main {
+    display: flex;
+}
+
+.illustration-section {
+    flex: 0.6;
+}
+
+.register-section {
+    flex: 0.4;
+    padding-top: 3.5rem;
+    padding-left: 2.5rem;
+}
+
+button {
+    font: inherit;
+    font-size: 1.125rem;
+    padding: 1em 4em;
+    border: none;
+    border-radius: 50px;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 10px 10px 50px -15px black;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+
+.icon {
+    border: 2px solid white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon a {
+    color: white;
+}
+
+.icon:hover  {
+    border-color: hsl(300, 69%, 71%);
+}
+
+.icon:hover .fa-brands {
+    color: hsl(300, 69%, 71%);
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1340px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .text, button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1080px) {
+
+    body {
+        gap: 3rem;
+    }
+
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header, main, footer {
+        max-width: 600px;
+    }
+
+    .register-section {
+        padding-top: 2rem;
+        padding-left: 0;
+    }
+
+    .logo {
+        margin-top: 1rem;
+    }
+
+    footer {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .logo {
+        width: 200px;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 750px) {
+    body {
+        background-image: url("../images/bg-desktop.svg");
+    }
+}
